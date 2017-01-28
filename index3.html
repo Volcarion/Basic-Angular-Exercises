@@ -41,6 +41,7 @@
                   
                     
                     lc.login = function login(){
+                        // idea to make this work from http://stackoverflow.com/questions/22178199/angularjs-check-if-passing-value-exists-in-array
                           for(var i=0;i<lc.people.length;i++){
                         if(lc.people[i].name===lc.name){
                             $scope.$emit('login', lc.name);
